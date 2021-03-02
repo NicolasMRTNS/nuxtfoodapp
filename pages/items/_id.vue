@@ -99,9 +99,10 @@ export default {
         count: this.count,
         options: this.itemOption,
         addOns: this.itemAddons,
-        compinedPrice: this.combinedPrice
+        combinedPrice: this.combinedPrice
       };
       this.cartSubmitted = true;
+      this.$store.commit("addToCart", formOutput);
     }
   }
 };
