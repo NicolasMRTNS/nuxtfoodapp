@@ -43,12 +43,12 @@
           <label :for="addOn">{{ addOn }}</label>
         </div>
       </fieldset>
-      <AppToast v-if="cartSubmitted"
-        >Order submitted <br />
+      <AppToast v-if="cartSubmitted" class="toast-success"
+        >Order submitted! <br />
         Check out more <nuxt-link to="/restaurants">restaurants!</nuxt-link>
       </AppToast>
-      <AppToast v-if="errors">
-        Please select options and <br />addons before continuing
+      <AppToast v-if="errors" class="toast">
+        Please select options and <br />add ons before continuing
       </AppToast>
     </section>
     <section class="options">

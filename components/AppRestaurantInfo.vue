@@ -13,7 +13,7 @@
           v-for="menuitem in store.menu"
           :key="menuitem.id"
           class="items"
-          :style="`background: url(${menuitem.img}) no-repeat center center`"
+          :style="`background: url(/${menuitem.img}) no-repeat center center`"
         >
           <div class="iteminfo">
             <div>
@@ -21,7 +21,7 @@
               <p>{{ priceFormatting(menuitem.price) }}</p>
             </div>
             <nuxt-link :to="`/items/${menuitem.id}`">
-              <button class="ghost">View Item</button>
+              <button class="ghost">View Item ></button>
             </nuxt-link>
           </div>
         </div>

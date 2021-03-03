@@ -267,9 +267,8 @@ table th {
 }
 
 // toast
-
-.toast {
-  background: #a8060e;
+.toast-success {
+  background: #06a837;
   color: white;
   border-radius: 3px;
   padding: 12px 24px;
@@ -283,6 +282,11 @@ table th {
     font-weight: bold;
     text-decoration: none;
   }
+}
+
+.toast {
+  @extend .toast-success;
+  background: #a8060e;
 }
 
 /* Page-specific styles */
